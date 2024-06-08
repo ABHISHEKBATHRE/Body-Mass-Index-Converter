@@ -15,5 +15,18 @@
        }
        else{
        document.querySelector("#b2").innerHTML=`${result}`;
+       if(result<18.6)
+        {
+            document.querySelector("#b2").innerHTML+="Under Weight as BMI is less than 18.6";  
+        }
+        else if(result>=18.6 && result<24.9)
+            {
+                document.querySelector("#b2").innerHTML+="Normal Weight as BMI is in between 18.6 and 24.9";  
+            }
+            else if(result>=24.9)
+                {
+                    document.querySelector("#b2").innerHTML+="<p>Over Weight as BMI is greater than 24.9 </p>";  
+                } 
        }
     })
+  
